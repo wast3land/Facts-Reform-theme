@@ -2,7 +2,8 @@
 <html>
     
     <head>
-        <link href="/wast3land.io.github/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+        {% include head-custom.html %}
     </head>
 
     <body style="overflow:hidden">
@@ -11,12 +12,12 @@
             <div class="container d-flex justify-content-between align-items-center" style="display: flex;">
         
               <div class="logo">
-                <h1 class="text-light"><a href="default.html"><span>Americans for Facts Reform</span></a></h1>
+                <h1 class="text-light"><a href="index.html"><span>Americans for Facts Reform</span></a></h1>
               </div>
         
               <nav id="navbar" class="navbar">
                 <ul>
-                  <li><a class="active" href="default.html">Home</a></li>
+                  <li><a class="active" href="index.html">Home</a></li>
                   <li><a href="about.html">About</a></li>
                   <li><a href="services.html">Services</a></li>
                   <li><a href="portfolio.html">Portfolio</a></li>
